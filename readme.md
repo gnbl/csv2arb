@@ -1,13 +1,15 @@
 Forked from https://github.com/MatCat/csv2arb to compile for Win32 with MinGW.
 
-*No warranty.*
+**No warranty.**
+
+Tested with a Rigol DS1000Z-S.
 
 
 csv2arb
 -------
 csv2arb converts the *input* text file with one value per line to 16 bit binary data (little endian) written to *output*.
-<input> should be normalized (-1.0 ... 1.0)
-<output> is padded to 32 kB with 0V Values.
+*input* should be normalized (-1.0 ... 1.0)
+*output* is padded to 32 kB with 0V Values.
 See [csv2arb.c](src/csv2arb.c) for more info.
 
 
@@ -32,6 +34,7 @@ This was tested with a Rigol DS1000Z-S model.
 * 0x0000 .. 0x3FFFF -> -V .. +V
 * most significant bit 0x8000 is Point marker
 * it seems at least 2 Points (= datum with marker) are required, data interpolation might be tested ?
+** the last point can't be selected by the oscilloscope's editor?
 
 Sample .arb files
 ----------------
