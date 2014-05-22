@@ -5,7 +5,7 @@ Forked from https://github.com/MatCat/csv2arb to compile for Win32 with MinGW.
 
 csv2arb
 -------
-csv2arb converts the <input> text file with one value per line to 16 bit binary data (little endian) written to <output>.
+csv2arb converts the *input* text file with one value per line to 16 bit binary data (little endian) written to *output*.
 <input> should be normalized (-1.0 ... 1.0)
 <output> is padded to 32 kB with 0V Values.
 See [csv2arb.c](src/csv2arb.c) for more info.
@@ -13,7 +13,7 @@ See [csv2arb.c](src/csv2arb.c) for more info.
 
 arb2csv
 -------
-arb2csv converts the <input> .arb file with 16 bit binary data (little endian) to ASCII float values written to <output>, one value per line.
+arb2csv converts the *input* .arb file with 16 bit binary data (little endian) to ASCII float values written to *output* one value per line.
 It detects and removes Point markers in the data.
 See [arb2csv.c](src/arb2csv.c) for more info.
 
