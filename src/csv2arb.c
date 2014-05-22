@@ -10,7 +10,7 @@
 // Compile on Windows using MinGW
 //  - Install MinGW http://sourceforge.net/projects/mingw/files/Installer/
 //  - Add <INSTALLPATH>/MinGW/bin/ to system PATH (to avoid a dialog window with this error message: "The program can't start because libgmp-10.dll is missing from your computer.")
-//  - run "gcc main.c -o csv2arb.exe"
+//  - run "gcc csv2arb.c -o csv2arb.exe"
 
 
 // Original source: https://github.com/MatCat/csv2arb
